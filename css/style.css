@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+}
+body {
+  color: black;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+img {
+  max-width: 50%;
+}
+li {
+  list-style: none;
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto 130px auto;
+  font-size: 0.9rem;
+  padding: 0 4%;
+}
+.site-title {
+  line-height: 1px;
+  color: black;
+  font-size: 1rem;
+}
+.site-title a {
+  display: block;
+}
+.sec-title {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 65px;
+}
+
+/*-------------------------------------------
+header
+-------------------------------------------*/
+#header {
+  max-width: 960px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+#header ul {
+  display: flex;
+  padding: 10px 0;
+}
+#header li {
+  font-size: 0.9rem;
+  margin-left: 30px;
+}
+#header li a {
+  color: black;
+}
+#header li a:hover {
+  opacity: 0.7;
+}
+
+/*-------------------------------------------
+Mainvisual
+-------------------------------------------*/
+#mainvisual {
+  margin-bottom: 80px;
+}
+
+#mainvisual ul {
+  text-align: center;
+  margin-left: -10px;
+}
+
+#mainvisual li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.icon-hatena:before {
+  content: "";
+  background-image: url(/img/hatenablog-logo.png);
+  display: inline-block;
+  vertical-align: middle;
+  width: 1em;
+  height: 1em;
+  background-size: 100%;
+}
+
+/*-------------------------------------------
+footer
+-------------------------------------------*/
+#footer {
+  /* background-color: #24292e; */
+  color: #fff;
+  font-size: 0.5rem;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+/*-------------------------------------------
+SP
+-------------------------------------------*/
+@media screen and (max-width: 600px) {
+  .wrapper {
+    margin-bottom: 70px;
+  }
+  .site-title {
+    margin-top: 20px;
+  }
+  .sec-title {
+    margin-bottom: 40px;
+  }
+
+  /*-------------------------------------------
+  ヘッダー
+  -------------------------------------------*/
+  #header {
+    max-width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+  #header li {
+    font-size: 0.8rem;
+    margin-left: 20px;
+  }
+  #header li:first-child {
+    margin-left: 0;
+  }
+}
